@@ -6,10 +6,9 @@
 	Azul= #009f9d
 	Rosado= #ffaaaa
 	Blanco-Gris= #E5E8E8
-	letras: color: rgb(50,50,50);;
 */
 
-/*Para Todo*/
+/*Para todo*/
 *{
 	padding: 0px;
 	margin: 0px;
@@ -26,142 +25,70 @@ a{
 html{
     scroll-behavior: smooth;
 }
-/*Fin Del Para Todo*/
+/*Fin del Para Todo*/
 
 /*Fuentes*/
 @font-face{	
 	src:url(../fuentes/Arvo-Regular.ttf);
-	font-family: fuente1;
+	font-family: title;
 }
 @font-face{
 	src:url(../fuentes/Allerta-Regular.ttf);
-	font-family: fuente2;
-}
-@font-face{
-	src:url(../fuentes/Fresca-Regular.ttf);
-	font-family: fuente3;
+	font-family: hola;
 }
 /*Fin de las Fuentes*/
 
-/*Loader*/
-.contenedor{
-	background: #FC014D;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	z-index: 1000;
-}
-div.todocont{
-	transform: translateY(200px);
-}
-div.letra p{
-	text-align: center;
-	font-family: fuente2;
-	color: #f3f8ff;
-	color: #4c0045;
-}
-div.letra h2{
-	text-align: center;
-	font-family: fuente1;
-	font-size: 30px;
-	color: #f3f8ff;
-	text-shadow: 1px 2px 5px rgba(10,10,10,10);
-	margin-bottom: 10px;
-}
-.loading{
-	display: flex;
-	justify-content: center;
-	margin:auto;
-	height: 80px;
-}
-.obj{
-	width: 6px;
-	height: 40px;
-	background: #4c0045;
-	margin: 0px 10px;
-	border-radius: 10px;
-	animation: loading 0.8s infinite;
-}
-
-.obj:nth-child(2){
-	animation-delay: 0.1s;
-}
-.obj:nth-child(3){
-	animation-delay: 0.2s;
-}
-.obj:nth-child(4){
-	animation-delay: 0.3s;
-}
-.obj:nth-child(5){
-	animation-delay: 0.4s;
-}
-.obj:nth-child(6){
-	animation-delay: 0.5s;
-}
-.obj:nth-child(7){
-	animation-delay: 0.6s;
-}
-.obj:nth-child(8){
-	animation-delay: 0.7s;
-}
-@keyframes loading{
-	0%{
-		transform: translateY(50px);
-		height: 0px;
-	}
-	50%{
-		height: 40px;
-	}
-	100%{
-		height: 0px;
-	}
-}
-/*Fin del Loader*/
-
-/*Header*/
+/*Header [[ Cabecera*/
 header{
 	width: 100%;
 	position: fixed;
 	background: #FC014D;
 	box-shadow: 2px 2px 2px rgba(10,10,10,0.5);
 	border-bottom: 3px solid #4c0045;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 2px 0px;
+	
+	height: 50px;
 	z-index: 2;
 }
-header h1{
-	font-family: fuente1;
+h1{
+	font-family: title;
 	font-size: 30px;
 	color: #f3f8ff;
 	text-shadow: 1px 2px 10px rgba(10,10,10,10);
 	padding: 0px 10px;
-	position: relative;
 	left: 20px;
-}
-header nav ul{
+	top: 5px;
+	position: relative;
+	float: left;
+}	
+	/*Menú de Navegacion*/
+nav ul{
+	position: relative;
+	top: 5px;
+	right: 10px;
+	float: right;
 	display: flex;
-	flex-wrap: wrap;
 	padding: 1px;
 }
 nav ul a{
 	padding: 2px 3px;
 	border-left: 2px solid rgba(66, 73, 73,0.2);
 }
-nav ul li{
+nav ul a li{
 	font-size: 18px;
-	font-family: fuente2;
+	font-family: hola;
 	color: #000;
 	transition: .5s all;
 	border:2px solid #FC014D;
-	padding: 5px;
-}
-nav ul li:hover{
+	padding: 5px; 
+} 
+nav ul a:hover li{
 	border-bottom: 2px solid #4c0045;
 	transition: .5s all;
 }
+
+	/*Fin del Menú*/
 /*Fin del Header*/
+
 
 /*Contenido Main*/
 div.fondo{
@@ -170,46 +97,62 @@ div.fondo{
 	background-size: contain;
 	background-position: center;
 	width: 100%;
-	height: 570px;
+	height: 550px;
 	position: relative;
 }
 div.sabana{
 	background: rgba(64, 9, 36,0.4);
 	width: 100%;
-	height: 570px;
+	height: 550px;
 	position: absolute;
 }
-div.main1{
+div.main{
 	margin-top: 70px;
+	width: 99%;
+	padding: 0px;
 	display: flex;
 	flex-wrap: wrap;
 	z-index: 1;
 	justify-content: space-around;
 }
-div.img img{
+	/*Contenido Main IMG*/
+div.img-main{
+	width: 810px;
+	height: 100%;
+	padding: 5px;
+	margin: 0px auto;
+}
+div.img-main img{
 	margin: auto;
 	display: block;
 	border:2px solid #4c0045;
 	border-radius: 3px;
-	box-shadow: 2px 12px 12px rgba(10,10,10,0.5); 
+	box-shadow: 2px 2px 2px rgba(10,10,10,0.5); 
 }
+	/*Fin del Contenido Main IMG*/
+
 /*Tabla*/
 div.tabla{
-	width: 460px;
+	width: 34%;
 	background: #ffaaaa;
 	border-radius: 4px;
 	border-top: 5px solid #FC014D;
 	box-shadow: 0.5px 2px 3px rgba(10,10,10,0.5);
+	position: relative;
 }
 div.tabla h5{
 	width: 60%;
 	font-size: 20px;
-	font-family: fuente1;
+	font-family: title;
 	text-align: center;
 	padding: 5px;
 	margin: 10px auto;
 	border-bottom: 3px solid #FC014D;
 }
+div.tabla h5.h52{
+	margin-top: 40px;
+}
+	/*Div de Jornadas*/
 div.jornada{
 	margin: auto;
 	width: 96%;
@@ -218,15 +161,19 @@ div.jornada{
 	align-items: center;
 	justify-content: space-around;
 	background: #E5E8E8;
-	margin-top: 10px;
+	margin-top: 5px;
 	border-radius: 4.3px;
 	transition: all .5s;
 	border: 2px solid rgba(252, 1, 77,0.4);
 }
 div.jornada:hover{
 	transition: all .5s;
-	transform: translateY(-5px);
+	transform: translateY(-2px);
 	box-shadow: 0px 0px 10px rgba(10,10,10,0.5);
+}
+div.jornada:hover span{
+	color: #FC014D; 
+	font-weight: 700;
 }
 div.equipo1{
 	margin-top: 4px;
@@ -240,13 +187,12 @@ div.equipo1 img{
 }
 div.equipo1 h3{
 	font-size: 15px;
-	font-family: fuente2;
+	font-family: title;
 	text-align: center;
 	padding: 5px;
 	margin: auto;
 	transition: all .5s;
 	border-bottom: 2px solid #E5E8E8;
-	color: rgb(50,50,50);
 }
 div.hora{
 	margin-top: 4px;
@@ -254,8 +200,7 @@ div.hora{
 	width: 30%;
 }
 div.hora span{
-	color: rgb(40,40,40);
-	font-family: fuente2;
+	font-family: hola;
 	font-size: 15px;
 	text-align: center;
 	padding: 5px;
@@ -263,21 +208,42 @@ div.hora span{
 div.hora p{
 	text-align:center; 
 }
+	/*Fin del Div de Jornadas */
+
+/*Tabla de Posiciones*/
+table{
+	margin: 10px auto;
+	width: 96%;
+	border: 2px solid rgba(252, 1, 77,0.4);
+	border-radius: 4px;
+	background: #E5E8E8;
+}
+th span{
+	font-size: 18px;
+}
+th{
+	font-size: 14;
+	font-family: title;
+}
+tr.color{
+	background: #f2f2f2;
+}
+/*Fin de la Tabla de Posiciones*/
+/*Boton*/
 div.tabla div.centro_letra{
+	background:   #4c0045;
 	padding: 5px;
 	margin: 10px auto;
 	width: 200px;
-	border: #4c0045 solid 2px;
-	border-radius: 5px;
+	border: #FC014D solid 2px;
+	border-radius: 10px;
 	transition: .5s all;
-	background: #E5E8E8;
-	border: 2px solid rgba(252, 1, 77,0.4);
 }
 div.tabla div.centro_letra p{
-	color: black;
-	font-family: fuente2;
-	text-align: center;
+	color: white;
+	font-family: hola;
 	transition: .5s all;
+	text-shadow: 1px 2px 5px rgba(10,10,10,10);
 }
 div.tabla div.centro_letra:hover {
 	background: #FC014D;
@@ -288,19 +254,18 @@ div.tabla div.centro_letra:hover {
 }
 div.tabla div.centro_letra:hover p{
 	transition: .5s all;
-	color: white;
+	text-shadow: none;
 }
-/*fin de la tabla*/
+/*Fin de la Tabla*/
 /*Fin del Contenido Main*/
 
-
 /*Seccion de las noticia principal*/
-section.noticia{
-	padding: 10px 0px;
+section.noticias{
+	padding: 10px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	width: 100%;
+	width: 700px;
+	margin-left:0px;
 }
 div.noticia{
 	width: 620px;
@@ -308,42 +273,71 @@ div.noticia{
 	border-radius: 4px;
 	border-top: 5px solid #FC014D;
 	margin: 10px auto;
+	overflow: hidden;
 }
-section.noticia h4{
+section.noticias h4{
 	font-size: 18px;
-	font-family: fuente1;
+	font-family: title;
 	margin-left: 3px;
 	margin: 10px; 
 }
-section.noticia p{
+section.noticias p{
 	font-size: 15px;
-	font-family: fuente3;
+	font-family: hola;
 	width: 90%;
 	margin: 10px auto;
 }
-div.boton1{
+div.noticia div.centro{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
 }
-div.boton1 p{
+div.centro_letra p{
 	text-align: center;
-	font-family: fuente2;
-	margin: 25px 0px;
-	transition: .5s all;
+	font-size: 16px;
+	font-weight: 700;
+	color: black;
 }
-div.boton1 a{
-	border: 2px solid #4c0045 ;
-	color:  white;
+div.noticia a.centro_letra{
 	background: #FC014D;
-	padding: 5px;
-	border-radius: 3px;
-	transition: .5s all;
+	width: 90px;
+	border-radius: 5px 5px 0px 0px;
 }
-div.boton1 a:hover{
-	background: transparent;
-	border: 2px solid #4c0045;
-	color:#FC014D;
-	transition: .5s all;
+	/*Colores de las noticias*/
+div.noticia li{
+	width: 80px;
+	height: 5px;
+	background: blue;
+	margin-top: 10px;
+	transition: all .5s;
 }
-/*Fin de Section Noticia*/
+div.noticia li.color1{
+	background: #f7b633;
+}
+div.noticia li.color2{
+	background: #009f9d;
+}
+div.noticia li.color3{
+	background: #4c0045;
+}
+div.noticia:hover li.color1{
+	width: 150px;
+	transition: all .5s;
+}
+div.noticia:hover li.color2{
+	width: 120px;
+	transition: all .5s;
+}
+div.noticia:hover li.color3{
+	width: 100px;
+	transition: all .5s;
+}
+div.noticia ul.right{
+	transform: perspective(300px) rotateY(-180deg);
+	transform-origin: 50% 50%; 
+} 
+/*Fin de la seccion de noticias principales*/
 
 /*Div del Contenedor de los Equipos*/
 section.team{
@@ -362,7 +356,7 @@ div.team_title h3{
 	padding: 6px;
 	margin: auto;
 	font-size: 30px;
-	font-family: fuente1;
+	font-family: title;
 	text-align: center;
 	font-weight: 700;
 	color: #fff;
@@ -390,9 +384,8 @@ ul.team_img li:hover{
 	border-bottom: 4px solid #f7b633;
 	border-top: 4px solid #f7b633;
 	box-shadow: 20px 10px 10px rgba(10,10,10,0.5);
-}	
+}
 /*Fin del div del contenedor de los Equipos*/
-
 
 /*Seccion de noticias Finales*/
 section.noticias_finales{
@@ -408,162 +401,299 @@ div.noti_final h3{
 	padding: 6px;
 	margin: auto;
 	font-size: 30px;
-	font-family: fuente1;
+	font-family: title;
 	text-align: center;
 	font-weight: 700;
 	width: 280px;
 	border-bottom: 4px solid rgba(252, 1, 77,0.4);
 }
-
-/*Estadistica*/
-div.estadisticas{
-	width: 70%;
-	margin: auto;
-	background: #ffaaaa;
-	border-radius: 30px;
+div.noticia_final{
+	width: 48%;
+	margin:20px auto;
+	background: #f2f2f2;
+	display: flex;
+	border-top: 4px solid rgba(252, 1, 77,0.4);
+	border-radius: 5px 5px 5px 35px;
+	transition: .5s all;
 }
-table{
-	width: 100%;
-	border-collapse: collapse;
+div.noticia_final img{
+	border-radius: 2px 0px 0px 35px;
 }
-table tr th{
-	font-family: fuente1;
+div.letras_noticia{
+	padding: 10px;	
+}
+div.letras_noticia h6{
+	font-size: 17px;
+	font-family: title;
+	padding: 4px;
+	margin: 4px 0px;
+	transition: 1s all;
+	text-align: center;
+	border: 2px dashed rgba(252, 1, 77,0.4);
+	border-radius: 3px;
+}
+div.noticia_final:hover h6{
+	border: 2px dashed rgba(10,10,10,0);
+	transition: .5s all;
+	border-radius: 10px;
 	color: white;
-	border-bottom: #f7b633 4px solid;
-	text-align: center;
-	background: #FC014D;
-	padding: 10px;
+	text-shadow: 1px 2px 5px rgba(10,10,10,10);
+	background: rgba(252, 1, 77,0.4);
+	background: linear-gradient(106deg, rgba(252, 1, 77,0.4) 0%, rgba(252, 1, 77,0.5) 47%, rgba(252, 1, 77,0.4) 100%);
 }
-table tr td{
-	font-family: fuente2;
-	text-align: center;
-	padding: 10px;
+div.letras_noticia p{
+	font-size: 14px;
+	font-family: hola;
+	padding: 8px;
+	margin: 4px 0px;
 }
-div.boton-estadistica{
-	text-align: center;
-	background: #4c0045;
-	width: 200px;
-	margin: auto;
-	padding: 10px;
-	border-radius: 0px 0px 10px 10px;
-	transition: all .5s;
-}
-div.boton-estadistica:hover{
-	background: #FC014D;
-	transition: all .5s;
-}
-div.boton-estadistica p{
-	font-family: fuente3;
-	color: white;
-	transition: all .5s;
-}
-/*FIn del Estadisitca*/
 /*Fin de la seccion de noticias finales*/
 
 /*Footer*/
 footer{
-	width: 90%;
-	margin: auto;
+	width: 100%;
 	margin-top: 100px;
 }
-
+/*Primer Footer*/
+div.primer-footer{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background: #4c0045;
+	color: white;
+	font-size: 18px;
+	font-family: title;
+	font-weight: 500;
+	padding: 10px 0px;
+	border-top: 4px solid #FC014D;
+	box-shadow: 2px 2px 2px rgba(10,10,10,0.5);
+}
+div.primer-footer a{
+	color: white;
+	font-weight: 500;
+}
+div.boton-final{
+	float: right;
+	padding: 10px 20px;
+	font-size: 30px;
+	position: relative;
+	bottom: 10px;
+	left: 80px;
+	border-radius: 0px 0px 10px 10px;
+	transition: all 0.5s ease;
+	background: #FC014D;
+	color: white;
+	border: 4px solid #4c0045;
+	border-top: 0px solid transparent;
+}
+div.boton-final:hover{
+	transition: all 0.5s ease;
+	background: #E5E8E8;
+	color: black;
+	border: 4px solid #FC014D;
+	border-top: 0px solid transparent;
+}
+div.primer-footer div.redes{
+	display: flex;
+	justify-content: space-between;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+}
+div.primer-footer div.redes p{
+	margin-right: 50px;
+}
+/*Fin del Primer Footer*/
+/*El Segundo Footer*/
+div.segundo-footer{
+	background: #4e2161;
+	color: #d9d9d9;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px;
+}
+div.sector1{
+	width: 30%;
+}
+div.sector1 h5{
+	width: 300px;
+	text-align: center;
+	border-bottom: 4px solid #FC014D;
+	font-family: title;
+	font-size: 20px;
+	font-weight: 700;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+}
+div.sector1 p{
+	padding: 8px;
+	font-family: hola;
+	font-size: 15px;
+}
+div.sector1 ul{
+	padding: 8px;
+	font-family: hola;
+	font-size: 15px;
+}
+div.sector1 li{
+	margin: 4px 0px;
+}
+/*Fin del Segundo Footer*/
 /*Tercer Footer*/
 div.tercer-footer{
-	height: 50px;
+	background: #2b2726;
 }
 div.tercer-footer p{
 	text-align: center;
-	font-family: fuente1;
+	font-family: title;
 	font-size: 20px;
-	color: rgb(50,50,50);
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+	color: #6c5b7b;
 }
 /*Fin del Tercer Footer*/
 /*Fin del Footer*/
 
+/*Responsive De la Pagina*/
+@media only screen and (max-width: 1254px){
 
-/*Media Query*/
-@media only screen and (max-width: 1265px){
 	div.tabla{
-		width:600px;
-		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+		justify-content: space-around;
+		padding: 10px;
+		margin-top: 20px;
+	}
+	div.main{
+		width: 100%;
+	}
+	div.tabla h5{
+	width: 100%;
+	}
+	div.jornadas{
+		width: 100%;
+	}
+	div.tabla{
+		width: 780px;
+	}
+	div.jornada{
+		width: 100%;
+	}
+	table{
+		margin: 0px;
+		width: 100%;
+	}
+	div.tabla h5.h52{
+		margin-top: 10.6px;
 	}
 	div.fondo{
-		height: 1050px;
+		height: 900px;
 	}
 	div.sabana{
-		height: 1050px;		
+		height: 900px;
+	}
+	section.noticias{
+		margin: 100px auto auto auto;
+		width: 100%;
+		padding: 0px;
+	}
+}
+@media only screen and (max-width: 1000px){
+	div.noticia_final{
+	width: 80%;
+	}
+	div.sector1 h5{
+		width: 200px;
 	}
 }
 
-@media only screen and (max-width: 850px){
-	div.img img{
-		width: 98%;
-		margin: auto;
-		display: block;
-		border:2px solid #4c0045;
-		border-radius: 3px;
-		box-shadow: 2px 12px 12px rgba(10,10,10,0.5); 
+@media only screen and (max-width: 800px){
+	div.img-main{
+		width: 100%;
+	}
+	div.img-main img{
+		width: 100%;
+		padding: 0px;
+	}
+	div.tabla{
+		width: 100%;
+		padding: 0px;
 	}
 }
-@media only screen and (max-width: 745px){
-	div.estadisticas{
-	width: 90%;}
+
+@media only screen and (max-width: 750px){
+	nav{
+		right: 0px;
+	}
+	h1{
+		left: 0px;
 }
-@media only screen and (max-width: 729px){
+@media only screen and (max-width: 701px){
+	header{
+		height: 85px;
+		display: flex;
+		flex-wrap: wrap;
+	}
 	header h1{
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+	nav ul{
+		width: 100%;
+		top: 0px;
+		left: 6px;
+		display:flex;
+		flex-wrap: wrap;
+	}
+	div.img-main{
+		margin-top: 40px;
+	}
+	div.noticia_final{
+		width: 95%;
+	}
+}
+@media only screen and (max-width: 678px){
+	div.sector1{
 		width: 100%;
 		text-align: center;
-		padding: 0px;
-		position: relative;
-		left: 0px;
+		margin-top: 20px;
 	}
+	div.sector1 h5{
+		width: 200px;
+		margin: auto;
+	}
+	div.boton-final{
+		left: 20px;
+	}
+}
+@media only screen and (max-width: 518px){
 	header{
-		display: block;
+		height: 150px;
+		position: relative;
 	}
-	header nav ul{
-		justify-content: space-around;
+	div.img-main{
+		margin-top: -50px;
 	}
-	header nav ul li{
-		display: table;
+	section.noticias{
+		margin: 200px auto auto auto;
 	}
-	nav ul a{
-		border-left: none;
-	}
-	div.main1{
-		margin-top: 90px;	
-	}
-}
-@media only screen and (max-width: 650px){
-	div.fondo{
-		height: 800px;
-	}
-	div.sabana{
-		height: 800px;		
-	}
-	section.noticia{
-		margin-top: 200px;
-	}
-	div.noticia{
+	section.noticias img{
 		width: 100%;
 	}
-	div.noticia img{
-		width: 100%;
+	div.noticia_final{
+		width: 300px;
+		display: flex;
+		flex-wrap: wrap;
 	}
 }
-@media only screen and (max-width: 579px){
-	div.estadisticas{
-		width: 100%;
-	}
-	table tr td{
-		padding: 0px;
-	}
-	table tr th{
-		padding: 0px;
+@media only screen and (max-width: 408px){
+	div.primer-footer div.redes p{
+		margin-right: 0px;
 	}
 }
-@media only screen and (max-width: 500px){
-	div.main1{
-		margin-top: 150px;	
+@media only screen and (max-width: 388px){
+	section.noticias{
+		margin: 100px auto auto auto;
 	}
 }
-/*Fin de los Media Query*/

@@ -1,63 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<title>Futbol La Dolorita</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Yilver Quevedo">
-	<meta name="description" content="Esta es una página de futbol sala La Dolorita">
+	<meta name="description" content="Esta es una pagina de futbol La Dolorita">
 	<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
 	<link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
 </head>
 <body>
-	<!--Loader-->
-	<div class="contenedor" id="contenedor">
-		<div class="todocont col">	
-			<div class="letra">
-				<h2>Futbol La Dolorita</h2>
-			</div>
-			<div class="loading col">
-				<div class="obj"></div>
-				<div class="obj"></div>
-				<div class="obj"></div>
-				<div class="obj"></div>
-				<div class="obj"></div>
-				<div class="obj"></div>
-				<div class="obj"></div>
-				<div class="obj"></div>
-			</div>
-			<div class="letra">
-				<p>Cargando...</p>
-			</div>
-		</div>
-	</div>
-	<!--Fin del Loader-->
-	
-	<!--Header-->
+
+	<!--Cabecera-->
 	<header>
-		<a href="index.html" class="title"><h1>La Dolorita</h1></a>
-		<!--Menú de Navegacion-->
+
+		<!--Titulo-->
+			<a href="index.html"><h1 title="La Dolorita">La Dolorita</h1></a>
+		<!--Fin del Titulo-->
+
+		<!--Nav // Menú de Navegacion-->
 		<nav>
-			<ul>
+			<ul id="menu-lateral">
 				<a href="index.html" style="border-left: 1px solid #FC014D;"><li style="border-bottom: 2px solid #4c0045;">Inicio</li></a>
 				<a href="paginas/jornadas.html"><li>Jornadas</li></a>
 				<a href="paginas/equipos.html"><li>Equipos</li></a>
 				<a href="paginas/estadisticas.html"><li>Estadísticas</li></a>
-				<a href="paginas/informacion.html"><li>Información</li></a>
+				<a href="paginas/informacion.html"><li>Infomación</li></a>
 			</ul>
 		</nav>
-		<!--Fin del Menú de Navegación-->
+		<!--Fin del Nav-->
+
 	</header>
-	<!--Fin del Header-->
+	<!--Fin de la Cabecera-->
 
 	<!--Main // Contenido Principal-->
+	
+	<!--Fondo Negro Transparente (Fondo) e Imagen de Fondo (Sabana)-->
 	<div class="fondo">
 	<div class="sabana">
-		<div class="main1">
-			<div class="img">
-				<img src="imagenes/portada.jpg" title="Portada" alt="Portada">
-			</div>
-			<div class="tabla">
-				
+
+	<!--Div Main // Todo el Contenido Principal-->	
+	<div class="main">
+		<!--Imagen de Portada-->	
+		<div class="img-main">
+			<img src="imagenes/portada.jpg" title="Portada" alt="Portada">		
+		</div>
+		<!--Fin de la Imagen de Portada-->
+		
+		<!--Tabla de Jornadas y de Posiciones-->	
+		<div class="tabla">
 			<!--Jornadas-->	
 			<div class="jornada11">
 				<h5>Próximas Jornadas</h5>
@@ -132,45 +122,118 @@
 					<!--Fin de la Jornada N°4-->
 
 				</div>
-				<a href="paginas/jornadas.html">
+				<a href="#">
 					<div class="centro_letra"><p>Ver Más</p></div>
 				</a>
 			</div>
-			</div>
 			<!--Fin de la Parte de Jornadas-->
+
+			<!--Tabla de Posiciones-->
+			<div class="jornada11">
+				<h5 class="h52">Tabla de Posiciones</h5>	
+				<div class="posiciones">
+					<table>
+						<tr class="main">
+							<th></th>
+							<th></th>
+							<th><span>Equipos</span></th>
+							<th><span>Puntos</span></th>
+						</tr>
+						<tr class="color">
+							<th>#1</th>
+							<th><img src="imagenes/cerdos.png"></th>
+							<th>Cerdos F.C</th>
+							<th>15</th>
+						</tr>
+						<tr>
+							<th>#2</th>
+							<th><img src="imagenes/troyanos.png"></th>
+							<th>Troyanos F.C</th>
+							<th>12</th>
+						</tr>
+						<tr class="color">
+							<th>#3</th>
+							<th><img src="imagenes/here.png"></th>
+							<th>Heretics</th>
+							<th>10</th>
+						</tr>
+						<tr>
+							<th>#4</th>
+							<th><img src="imagenes/riders.png"></th>
+							<th>Riders</th>
+							<th>09</th>
+						</tr>
+						<tr class="color">
+							<th>#5</th>
+							<th><img src="imagenes/rogue.png"></th>
+							<th>Rogue</th>
+							<th>07</th>
+						</tr>
+						<tr>
+							<th>#6</th>
+							<th><img src="imagenes/artic.png"></th>
+							<th>Artic</th>
+							<th>06</th>
+						</tr>
+						<tr class="color">
+							<th>#7</th>
+							<th><img src="imagenes/lobo.png"></th>
+							<th>Wolf F.C</th>
+							<th>03</th>
+						</tr>
+						<tr>
+							<th>#8</th>
+							<th><img src="imagenes/intic.png"></th>
+							<th>R.Instint</th>
+							<th>01</th>
+						</tr>
+					</table>
+				</div>
+				<a href="#">
+					<div class="centro_letra"><p>Ver Más</p></div>
+				</a>
+			</div>
+			<!--Fin de la Tabla de Posiciones-->		
+
 		</div>
+	</div>
+	<!--Fin del  Contenido Principal // Main-->
 	</div>
 	</div>
 	<!--Fin del Fondo negro y de la imagen-->
-	<section class="noticia">
+
+	<!--Noticias Principales-->
+	<section class="noticias">
+		
 		<!--Noticia 1-->
 		<div class="noticia">
 			<img src="imagenes/inscri.jpg" title="Noticia" alt="Noticia">
 			<h4>Inscripciones Abiertas</h4>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.
 			</p>
-			<div class="boton1">
-				<p><a href="paginas/informacion.html">Ver Más</a></p>
+			<!--Div del centro de la Noticia-->
+			<div class="centro">
+				<!--Colores-->
+				<ul class="left">
+					<li class="color1"></li>
+					<li class="color2"></li>
+					<li class="color3"></li>
+				</ul>
+				<a href="paginas/informacion.html" class="centro_letra">
+					<div class="centro_letra"><p>Ver Más</p></div>
+				</a>
+				<!--Colores-->
+				<ul class="right">
+					<li class="color1"></li>
+					<li class="color2"></li>
+					<li class="color3"></li>
+				</ul>
 			</div>
-		</div>
-
-		<!--Noticia 2-->
-		<div class="noticia">
-			<img src="imagenes/inscri.jpg" title="Noticia" alt="Noticia">
-			<h4>Inscripciones Abiertas</h4>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.
-			</p>
-			<div class="boton1">
-				<p><a href="paginas/informacion.html">Ver Más</a></p>
-			</div>
+			<!--Fin del Div del Centro de la Noticia-->
 		</div>
 	</section>
+	<!--Fin de las Noticias Principales-->	
 
 	<!--Seccion de equipos-->
 	<section class="team">
@@ -200,62 +263,92 @@
 
 	<!--Seccion de noticias Finales-->
 	<div class="noti_final">
-		<h3>Clasificación</h3>
+		<h3>Noticias</h3>
 	</div>
 	<section class="noticias_finales">
-		<!--Div de Estadisticas-->
-		<div class="estadisticas">
-			<table border="0">
-				<tr> 
-					<th></th> <th></th> <th>Equipos</th> <th>Puntos</th> 
-					<th>PG</th><th>PE</th><th>PP</th><th>GF</th><th>GC</th> <th>DG</th>
-				</tr>
-				<tr> 
-					<td>#1</td><td><img src="imagenes/cerdos.png"></td> <td>Cerdos F.C</td>
-					<td>15</td> <td>4</td><td>0</td><td>2</td><td>18</td><td>3</td><td>15</td>
-				</tr>
-				<tr class="table-color">
-					<td>#2</td><td><img src="imagenes/troyanos.png"></td> <td>Troyanos F.C</td>
-					<td>12</td> <td>3</td><td>3</td><td>0</td><td>15</td><td>5</td><td>10</td>
-				</tr>
-				<tr>
-					<td>#3</td><td><img src="imagenes/here.png"></td> <td>Heretics</td>
-					<td>10</td> <td>3</td><td>1</td><td>2</td><td>12</td><td>4</td><td>09</td>
-				</tr>
-				<tr class="table-color">
-					<td>#4</td><td><img src="imagenes/riders.png"></td> <td>Riders</td>
-					<td>09</td> <td>3</td><td>0</td><td>3</td><td>18</td><td>8</td><td>10</td>
-				</tr>
-				<tr> 
-					<td>#5</td><td><img src="imagenes/rogue.png"></td> <td>Rogue</td>
-					<td>07</td> <td>2</td><td>1</td><td>3</td><td>10</td><td>10</td><td>0</td>
-				</tr>
-				<tr class="table-color">
-					<td>#6</td><td><img src="imagenes/artic.png"></td> <td>Artic</td>
-					<td>06</td> <td>1</td><td>3</td><td>3</td><td>5</td><td>10</td><td>-5</td>
-				</tr>
-				<tr>
-					<td>#7</td><td><img src="imagenes/lobo.png"></td> <td>Wolf F.C</td>
-					<td>03</td> <td>1</td><td>0</td><td>5</td><td>8</td><td>13</td><td>-5</td>
-				</tr>
-				<tr class="table-color">
-					<td>#8</td><td><img src="imagenes/intic.png"></td> <td>R.Instint</td>
-					<td>01</td> <td>0</td><td>1</td><td>5</td><td>5</td><td>18</td><td>-13</td>
-				</tr>
-			</table>
+		<!--Cada Noticia-->
+		<div class="noticia_final">
+			<img src="imagenes/noticia2.jpg">
+			<div class="letras_noticia">
+				<h6>Campeones Nuevamente</h6>
+				<p>El equipo de Argentina FSC de la Dolorita lo ha logrado nuevamente consiguiendo su 2do titulo esta temporada tras derrotar a Limenores FSC 3-1.</p>
+			</div>
 		</div>
-		<!--Fin del Div de Estadisticas-->
+		<!--Fin de Cada Noticia-->
+		<!--Cada Noticia-->
+		<div class="noticia_final">
+			<img src="imagenes/noticia3.jpg">
+			<div class="letras_noticia">
+			<h6>Preparandose</h6>
+				<p>Los Amateur FSC están preparandose para la proxima jornada de la Sub-17.</p>
+			</div>
+		</div>
+		<!--Fin de Cada Noticia-->
+		<!--Cada Noticia-->
+		<div class="noticia_final">
+			<img src="imagenes/noticia4.jpg">
+			<div class="letras_noticia">
+			<h6>Fecha de Goles</h6>
+				<p>La última jornada fue de goles con más de 32 goles en todas las jornadas y resaltando que el promedio de goles por jornadas es de solo 24 o 27 goles podemos decir que la última jornada fue todo un éxito.</p>
+			</div>
+		</div>
+		<!--Fin de Cada Noticia-->
+		<!--Cada Noticia-->
+		<div class="noticia_final">
+			<img src="imagenes/noticia5.jpg">
+			<div class="letras_noticia">
+			<h6>Fecha de Goles</h6>
+				<p>La última jornada fue de goles con más de 32 goles en todas las jornadas y resaltando que el promedio de goles por jornadas es de solo 24 o 27 goles podemos decir que la última jornada fue todo un éxito.</p>
+			</div>
+		</div>
+		<!--Fin de Cada Noticia-->
 	</section>
-		<a href="paginas/estadisticas.html"><div class="boton-estadistica">
-			<p>Ver Más</p>
-		</div></a>
 	<!--Fin de la Seccion de noticias Finales-->
-
+	
 	<!--footer-->
 	<footer>
+		<!--Primer Footer-->
+		<div class="primer-footer">
+			<div class="redes">	
+				<p>Siguenos en:</p>
+				<a href="#">Facebook</a>
+			</div>
+			<a href="#">
+				<div class="boton-final">
+					<p>↑</p>
+				</div>
+			</a>
+		</div>
+
+		<!--Segundo Footer-->
+		<div class="segundo-footer">
+			<div class="sector1">
+				<h5>Futbol La Dolorita</h5>
+				<p>
+					Esta es una pagina de Futbol La Dolorita.
+				</p>
+			</div>
+			<div class="sector1">
+				<h5>Contactanos</h5>
+				<ul>
+					<li>La Dolorita - Terminal</li>
+					<li>Futbolladolorita@gmail.com</li>
+					<li>0212-000-0000</li>
+				</ul>
+			</div>
+			<div class="sector1">
+				<h5>Creadores</h5>
+				<ul>
+					<li>Name - Company</li>
+					<li>Namecompany@gmail.com</li>
+					<li>0212-000-0000</li>
+				</ul>
+			</div>
+		</div>
+
 		<!--Tercer Footer-->
 		<div class="tercer-footer">
-			<p>© 2019 Copyright - <span>D & Y</span></p>
+			<p>© 2019 Copyright: <span>D & Y</span></p>
 		</div>
 	</footer>
 	<!--Fin del Footer-->
