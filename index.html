@@ -1,91 +1,263 @@
-<!DOCTYPE HTML>
-<html lang="es">
-    <head>
-        <title>Futbol Sala - La Dolorita</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="Futbol Sala - La Dolorita. Partidos, Equipos y Estadisticas">
-        <meta name="keywords" content="Futbol, Futbol Sala, La dolorita">
-        <meta name="author" content="Yilver Quevedo">
-        <link rel="stylesheet" type="text/css" href="css/estilos.css">
-        <link rel="shortcut icon" type="image/x-icon" href="imagenes/futbol.ico">
-    </head>
-    	<!--header-->
-    <body>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Futbol La Dolorita</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Yilver Quevedo">
+	<meta name="description" content="Esta es una página de futbol sala La Dolorita">
+	<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+	<link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+</head>
+<body>
+	<!--Loader-->
+	<div class="contenedor" id="contenedor">
+		<div class="todocont col">	
+			<div class="letra">
+				<h2>Futbol La Dolorita</h2>
+			</div>
+			<div class="loading col">
+				<div class="obj"></div>
+				<div class="obj"></div>
+				<div class="obj"></div>
+				<div class="obj"></div>
+				<div class="obj"></div>
+				<div class="obj"></div>
+				<div class="obj"></div>
+				<div class="obj"></div>
+			</div>
+			<div class="letra">
+				<p>Cargando...</p>
+			</div>
+		</div>
+	</div>
+	<!--Fin del Loader-->
+	
+	<!--Header-->
 	<header>
-        <a href="index.html"><img class="imagen1" src="imagenes/imagen.png"></a>
-        <ul>
-            <a href="#"><li> <img class="icon" src="imagenes/iconos/facebook.png"> </li>  </a>
-            <a href="#"><li> <img class="icon" src="imagenes/iconos/twitter.png"> </li>  </a>
-            <a href="#"><li> <img class="icon" src="imagenes/iconos/instagram.png"> </li>  </a>
-        </ul>
+		<a href="index.html" class="title"><h1>La Dolorita</h1></a>
+		<!--Menú de Navegacion-->
+		<nav>
+			<ul>
+				<a href="index.html" style="border-left: 1px solid #FC014D;"><li style="border-bottom: 2px solid #4c0045;">Inicio</li></a>
+				<a href="paginas/jornadas.html"><li>Jornadas</li></a>
+				<a href="paginas/equipos.html"><li>Equipos</li></a>
+				<a href="paginas/estadisticas.html"><li>Estadísticas</li></a>
+				<a href="paginas/informacion.html"><li>Información</li></a>
+			</ul>
+		</nav>
+		<!--Fin del Menú de Navegación-->
 	</header>
-    <!--article-->
-    <article>
-        <section class="mini-menu">
-            <ul>
-                <a href="index.html"><img src="imagenes/iconos/letra.png"></a>
-                <a href="jornada.html"> <li>Jornadas</li> </a>
-                <a href="equipos.html"> <li>Equipos</li> </a>
-                <a href="grupos.html"> <li>Copa Dolores</li> </a>
-                <a href="liga.html"> <li>Liga Fox</li> </a>
-                <a href="estadisticas.html"> <li>Estadísticas</li> </a>
-                <a href="informacion.html"> <li>Información</li> </a>
-            </ul>
-        </section>
-        <section class="main">
-           <div class="img-main">
-                <img src="imagenes/portada.jpg">
-            </div>
-            <div class="principal">
-                <a href="informacion.html"><div class="noticia"><div class="img-noti"><img src="imagenes/noticia1.jpg"></div> <div class="p-noti"><h3>Inscribete YA...</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div></div></a>
-                    
-                    <a href="detallesdelacopa.html"> <div class="noticia"><div class="img-noti"><img src="imagenes/noticia3.jpg"></div><div class="p-noti"><h3>Detalles de la "Copa Dolores 2018"</h3><p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p></div></div></a>
-                   
-                   <a href="detallesliga.html"><div class="noticia"><div class="img-noti"><img src="imagenes/noticia2.png"></div><div class="p-noti"><h3>Detalles Sobre la "Liga Fox"</h3><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p></div></div></a>
-                    
-                    <div class="noticia"><div class="img-noti"><img src="imagenes/noticia4.jpg"></div><div class="p-noti"><h3>El Equipo Footer Fue Eliminado</h3><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p></div></div>
-                    
-                    <div class="noticia"><div class="img-noti"><img src="imagenes/noticia5.jpg"></div><div class="p-noti"><h3>Dakiri Empató Pero Clasificó</h3><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p></div></div>
-            </div>
-        </section>
-        <section class="aside">
-            <div class="jornada">
-                <div class="jornadas"><h3>Proximas Jornadas</h3>  </div>
-                <ul>
-                     <li><img src="imagenes/equipos/alemania.png">  </li><p>VS</p><li><img src="imagenes/equipos/eeuu.png">  </li>
-                    </ul>
-                <ul>
-                    <li><img src="imagenes/equipos/espana.png">  </li><p>VS</p><li><img src="imagenes/equipos/checa.png"}>  </li>
-                    </ul>
-                <ul>
-                    <li><img src="imagenes/equipos/venezuela.png">  </li><p>VS</p><li><img src="imagenes/equipos/corea.png">  </li>
-                    </ul>
-                <a href="jornada.html"><div class="mas-jornadas"><h3>Más Jornadas</h3>  </div></a>
-            </div>
-            <div class="goleadores">
-                <h3>Goleadores:</h3>
-                <ul>
-                    <li> <img src="imagenes/jugadores/cara1.png"><p>Juan: 12 (Dakiri)</p> </li>
-                    <li> <img src="imagenes/jugadores/cara2.png"><p>Pedro: 10 (Futbol F.C)</p> </li>
-                    <li> <img src="imagenes/jugadores/cara3.png"><p>Sebastian: 8 (SimCity F.C)</p> </li>
-                    <li> <img src="imagenes/jugadores/cara4.png"><p>David: 7(Dakiri)</p> </li>
-                    <li> <img src="imagenes/jugadores/cara5.png"><p>Manuel: 7 (Fsocity)</p> </li>
-                    <li> <img src="imagenes/jugadores/cara6.png"><p>Frank: 5 (Header F.C)</p> </li>
-                    <li> <img src="imagenes/jugadores/cara7.png"><p>Melias: 4(Futbol F.C)</p> </li>
-                    <li> <img src="imagenes/jugadores/cara3.png"><p>Julia: 2 (Footer)</p> </li>
-                </ul>
-                        <a href="estadisticas.html"><div class="mas-jornadas"> <h3>Más Estadisticas</h3></div></a>
-            </div>
-        </section>
-    </article>
-    <!--fin del article-->
-    	<!--fin del header-->
+	<!--Fin del Header-->
+
+	<!--Main // Contenido Principal-->
+	<div class="fondo">
+	<div class="sabana">
+		<div class="main1">
+			<div class="img">
+				<img src="imagenes/portada.jpg" title="Portada" alt="Portada">
+			</div>
+			<div class="tabla">
+				
+			<!--Jornadas-->	
+			<div class="jornada11">
+				<h5>Próximas Jornadas</h5>
+				<div class="jornadas">
+
+					<!--Jornada N°1-->	
+					<div class="jornada">
+						<div class="equipo1">
+							<img src="imagenes/cerdos.png" title="#" alt="#">
+							<h3>Cerdos F.C</h3>
+						</div>
+						<div class="hora">
+							<p><span>VS</span></p>
+							<p><span>8:30 AM</span></p>
+						</div>
+						<div class="equipo1">
+							<img src="imagenes/troyanos.png" title="#" alt="#">
+							<h3>Troyanos F.C</h3>
+						</div>
+					</div>
+					<!--Fin de la Jornada N°1-->
+
+					<!--Jornada N°2-->	
+					<div class="jornada">
+						<div class="equipo1">
+							<img src="imagenes/here.png" title="#" alt="#">
+							<h3>Heretics</h3>
+						</div>
+						<div class="hora">
+							<p><span>VS</span></p>
+							<p><span>9:00 AM</span></p>
+						</div>
+						<div class="equipo1">
+							<img src="imagenes/riders.png" title="#" alt="#">
+							<h3>Riders</h3>
+						</div>
+					</div>
+					<!--Fin de la Jornada N°2-->
+
+					<!--Jornada N°3-->	
+					<div class="jornada">
+						<div class="equipo1">
+							<img src="imagenes/rogue.png" title="#" alt="#">
+							<h3>Rogue</h3>
+						</div>
+						<div class="hora">
+							<p><span>VS</span></p>
+							<p><span>10:30 AM</span></p>
+						</div>
+						<div class="equipo1">
+							<img src="imagenes/artic.png" title="#" alt="#">
+							<h3>Artic</h3>
+						</div>
+					</div>
+					<!--Fin de la Jornada N°3-->
+
+					<!--Jornada N°4-->	
+					<div class="jornada">
+						<div class="equipo1">
+							<img src="imagenes/lobo.png" title="#" alt="#">
+							<h3>Wolf F.C</h3>
+						</div>
+						<div class="hora">
+							<p><span>VS</span></p>
+							<p><span>2:00 PM</span></p>
+						</div>
+						<div class="equipo1">
+							<img src="imagenes/intic.png" title="#" alt="#">
+							<h3>R. Instint</h3>
+						</div>
+					</div>
+					<!--Fin de la Jornada N°4-->
+
+				</div>
+				<a href="paginas/jornadas.html">
+					<div class="centro_letra"><p>Ver Más</p></div>
+				</a>
+			</div>
+			</div>
+			<!--Fin de la Parte de Jornadas-->
+		</div>
+	</div>
+	</div>
+	<!--Fin del Fondo negro y de la imagen-->
+	<section class="noticia">
+		<!--Noticia 1-->
+		<div class="noticia">
+			<img src="imagenes/inscri.jpg" title="Noticia" alt="Noticia">
+			<h4>Inscripciones Abiertas</h4>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+			<div class="boton1">
+				<p><a href="paginas/informacion.html">Ver Más</a></p>
+			</div>
+		</div>
+
+		<!--Noticia 2-->
+		<div class="noticia">
+			<img src="imagenes/inscri.jpg" title="Noticia" alt="Noticia">
+			<h4>Inscripciones Abiertas</h4>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+			</p>
+			<div class="boton1">
+				<p><a href="paginas/informacion.html">Ver Más</a></p>
+			</div>
+		</div>
+	</section>
+
+	<!--Seccion de equipos-->
+	<section class="team">
+		<div class="team">
+		<div class="sabana_team">
+			<div class="team_title">
+				<h3>Equipos</h3>
+			</div>
+			<!--Div contenedor de los Equipos-->
+			<div class="team_img">
+				<ul class="team_img">
+					<a href="paginas/instint.html"><li><img src="imagenes/arsenal.png" title="Arsenal" alt="Arsnenal"></li></a>
+					<a href="paginas/wolf.html"><li><img src="imagenes/real.png" title="Real Madrid" alt="Real Madrid"></li></a>
+					<a href="paginas/artic.html"><li><img src="imagenes/bayen.png" title="Bayer Munich" alt="Bayer Munich"></li></a>
+					<a href="paginas/rogue.html"><li><img src="imagenes/roma.png" title="Roma F.C" alt="Roma F.C"></li></a>
+					<a href="paginas/riders.html"><li><img src="imagenes/atletico.png" title="Atlectico Del Madird" alt="Atlectico Del Madird"></li></a>
+					<a href="paginas/cerdos.html"><li><img src="imagenes/borusia.png" title="Borusia Dormuntd" alt="Borusia Dormuntd"></li></a>
+					<a href="paginas/heretics.html"><li><img src="imagenes/manchester.png" title="Manchester United" alt="Manchester United"></li></a>
+					<a href="paginas/troyanos.html"><li><img src="imagenes/lazio.png" title="Lazio F.C" alt="Lazio F.C"></li></a>
+				</ul>
+			</div>
+			<!--Fin del Div contenedor de los Equipos-->
+		</div>
+		</div>
+	</section>
+	<!--Fin del Seccion de Equipos-->
+
+	<!--Seccion de noticias Finales-->
+	<div class="noti_final">
+		<h3>Clasificación</h3>
+	</div>
+	<section class="noticias_finales">
+		<!--Div de Estadisticas-->
+		<div class="estadisticas">
+			<table border="0">
+				<tr> 
+					<th></th> <th></th> <th>Equipos</th> <th>Puntos</th> 
+					<th>PG</th><th>PE</th><th>PP</th><th>GF</th><th>GC</th> <th>DG</th>
+				</tr>
+				<tr> 
+					<td>#1</td><td><img src="imagenes/cerdos.png"></td> <td>Cerdos F.C</td>
+					<td>15</td> <td>4</td><td>0</td><td>2</td><td>18</td><td>3</td><td>15</td>
+				</tr>
+				<tr class="table-color">
+					<td>#2</td><td><img src="imagenes/troyanos.png"></td> <td>Troyanos F.C</td>
+					<td>12</td> <td>3</td><td>3</td><td>0</td><td>15</td><td>5</td><td>10</td>
+				</tr>
+				<tr>
+					<td>#3</td><td><img src="imagenes/here.png"></td> <td>Heretics</td>
+					<td>10</td> <td>3</td><td>1</td><td>2</td><td>12</td><td>4</td><td>09</td>
+				</tr>
+				<tr class="table-color">
+					<td>#4</td><td><img src="imagenes/riders.png"></td> <td>Riders</td>
+					<td>09</td> <td>3</td><td>0</td><td>3</td><td>18</td><td>8</td><td>10</td>
+				</tr>
+				<tr> 
+					<td>#5</td><td><img src="imagenes/rogue.png"></td> <td>Rogue</td>
+					<td>07</td> <td>2</td><td>1</td><td>3</td><td>10</td><td>10</td><td>0</td>
+				</tr>
+				<tr class="table-color">
+					<td>#6</td><td><img src="imagenes/artic.png"></td> <td>Artic</td>
+					<td>06</td> <td>1</td><td>3</td><td>3</td><td>5</td><td>10</td><td>-5</td>
+				</tr>
+				<tr>
+					<td>#7</td><td><img src="imagenes/lobo.png"></td> <td>Wolf F.C</td>
+					<td>03</td> <td>1</td><td>0</td><td>5</td><td>8</td><td>13</td><td>-5</td>
+				</tr>
+				<tr class="table-color">
+					<td>#8</td><td><img src="imagenes/intic.png"></td> <td>R.Instint</td>
+					<td>01</td> <td>0</td><td>1</td><td>5</td><td>5</td><td>18</td><td>-13</td>
+				</tr>
+			</table>
+		</div>
+		<!--Fin del Div de Estadisticas-->
+	</section>
+		<a href="paginas/estadisticas.html"><div class="boton-estadistica">
+			<p>Ver Más</p>
+		</div></a>
+	<!--Fin de la Seccion de noticias Finales-->
+
+	<!--footer-->
 	<footer>
-        <div class="footer">
-            <p>Pagina Creada Por Yilver Quevedo</p>
-            <p>&copy; Todos los derechos reservados - La Dolorita Futbol Sala 2018</p>
-        </div>
-    </footer>
-        </body>
+		<!--Tercer Footer-->
+		<div class="tercer-footer">
+			<p>© 2019 Copyright - <span>D & Y</span></p>
+		</div>
+	</footer>
+	<!--Fin del Footer-->
+</body>
 </html>

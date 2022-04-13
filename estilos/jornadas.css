@@ -1,0 +1,372 @@
+/*
+	Colores Principales:
+	Morado= #FC014D	
+	Morado Fuerte= #4c0045
+	Amarillo= #f7b633
+	Azul= #009f9d
+	Rosado= #ffaaaa
+	Blanco-Gris= #E5E8E8
+	letras: color: rgb(50,50,50);;
+*/
+
+/*Para Todo*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background: #d9d9d9;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Fin Del Para Todo*/
+
+/*Fuentes*/
+@font-face{	
+	src:url(../fuentes/Arvo-Regular.ttf);
+	font-family: fuente1;
+}
+@font-face{
+	src:url(../fuentes/Allerta-Regular.ttf);
+	font-family: fuente2;
+}
+@font-face{
+	src:url(../fuentes/Fresca-Regular.ttf);
+	font-family: fuente3;
+}
+/*Fin de las Fuentes*/
+
+/*Loader*/
+.contenedor{
+	background: #FC014D;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1000;
+}
+div.todocont{
+	transform: translateY(200px);
+}
+div.letra p{
+	text-align: center;
+	font-family: fuente2;
+	color: #f3f8ff;
+	color: #4c0045;
+}
+div.letra h2{
+	text-align: center;
+	font-family: fuente1;
+	font-size: 30px;
+	color: #f3f8ff;
+	text-shadow: 1px 2px 5px rgba(10,10,10,10);
+	margin-bottom: 10px;
+}
+.loading{
+	display: flex;
+	justify-content: center;
+	margin:auto;
+	height: 80px;
+}
+.obj{
+	width: 6px;
+	height: 40px;
+	background: #4c0045;
+	margin: 0px 10px;
+	border-radius: 10px;
+	animation: loading 0.8s infinite;
+}
+
+.obj:nth-child(2){
+	animation-delay: 0.1s;
+}
+.obj:nth-child(3){
+	animation-delay: 0.2s;
+}
+.obj:nth-child(4){
+	animation-delay: 0.3s;
+}
+.obj:nth-child(5){
+	animation-delay: 0.4s;
+}
+.obj:nth-child(6){
+	animation-delay: 0.5s;
+}
+.obj:nth-child(7){
+	animation-delay: 0.6s;
+}
+.obj:nth-child(8){
+	animation-delay: 0.7s;
+}
+@keyframes loading{
+	0%{
+		transform: translateY(50px);
+		height: 0px;
+	}
+	50%{
+		height: 40px;
+	}
+	100%{
+		height: 0px;
+	}
+}
+/*Fin del Loader*/
+
+/*Header*/
+header{
+	width: 100%;
+	position: fixed;
+	background: #FC014D;
+	box-shadow: 2px 2px 2px rgba(10,10,10,0.5);
+	border-bottom: 3px solid #4c0045;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 2px 0px;
+	z-index: 2;
+}
+header h1{
+	font-family: fuente1;
+	font-size: 30px;
+	color: #f3f8ff;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+	padding: 0px 10px;
+	position: relative;
+	left: 20px;
+}
+header nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1px;
+}
+nav ul a{
+	padding: 2px 3px;
+	border-left: 2px solid rgba(66, 73, 73,0.2);
+}
+nav ul li{
+	font-size: 18px;
+	font-family: fuente2;
+	color: #000;
+	transition: .5s all;
+	border:2px solid #FC014D;
+	padding: 5px;
+}
+nav ul li:hover{
+	border-bottom: 2px solid #4c0045;
+	transition: .5s all;
+}
+/*Fin del Header*/
+
+/*Contenido Principal*/
+div.margen{
+	width: 100%;
+	height: 100px;
+}
+div.partea{
+	width: 90%;
+	margin: 30px auto;
+	background: #f6e5e5;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #e6b2c6;
+	box-shadow: 2px 2px 2px rgba(10,10,10,0.5);
+}
+div.parte{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 0px;
+}
+article.jornadas{
+	width: 100%;
+}
+article.jornadas div.h4{
+	width: 250px;
+	margin: auto;
+}
+article.jornadas div.h4:hover h4{
+	color: #000;
+	background: transparent;
+	transition: .5s all ease;
+	transform: translateY(-5px);
+	border-radius: 10px 10px 2px 2px;
+	text-shadow: 0px 0px 0px rgba(10,10,10,10);
+	border: 2px solid #555;
+	border-bottom: 4px solid #FC014D;
+	box-shadow: 1px 5px 10px rgba(10,10,10,0.5);
+}
+article.jornadas h4{
+	padding: 1px;
+	transition: .5s all;
+	font-family: fuente1;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	border: 2px solid transparent;
+	border-bottom: 4px solid #FC014D;
+	color: white;
+	background: #4c0045;
+	transition: .5s all ease;
+	border-radius: 10px 10px 2px 2px;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+}
+div.h5{
+	width: 300px;
+	margin: auto;
+}
+article.jornadas h5{
+	display: block;
+	font-size: 20px;
+	font-family: fuente2;
+	text-align: center;
+	padding: 5px;
+	margin: 10px 0px;
+	border-bottom: 4px solid #FC014D;
+}
+div.partidos{
+	background:#ffaaaa;
+	width: 45%;
+	margin: auto;
+	padding: 10px 5px;
+	border-radius: 5px;
+	border-top: 4px solid #FC014D;
+}
+div.jornada{
+	color: rgb(40,40,40);
+	margin: auto;
+	width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	background: #E5E8E8;
+	margin-top: 10px;
+	border-radius: 4.3px;
+	transition: all .5s;
+	border: 2px solid rgba(252, 1, 77,0.4);
+}
+div.jornada:hover{
+	transition: all .5s;
+	transform: translateY(-5px);
+	box-shadow: 0px 0px 10px rgba(10,10,10,0.5);
+}
+div.equipo1{
+	margin-top: 4px;
+	border-bottom: 4px solid transparent;
+	width: 30%;
+}
+div.equipo1 img{
+	display: block;
+	margin:auto;
+}
+div.equipo1 h3{
+	font-size: 20px;
+	font-family: fuente3;
+	text-align: center;
+	padding: 5px;
+	margin: auto;
+	transition: all .5s;
+}
+div.hora{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	width: 20%;
+	border-radius: 5px;
+}
+div.hora span{
+	font-family: fuente2;
+	font-size: 18px;
+	text-align: center;
+	padding: 5px;
+	font-weight: 700;
+}
+div.hora p{
+	text-align:center; 
+}
+/*Fin del Conenido Principal*/
+
+/*Footer*/
+footer{
+	width: 90%;
+	margin: auto;
+	margin-top: 100px;
+}
+
+/*Tercer Footer*/
+div.tercer-footer{
+	height: 50px;
+}
+div.tercer-footer p{
+	text-align: center;
+	font-family: fuente1;
+	font-size: 20px;
+	color: rgb(50,50,50);
+}
+/*Fin del Tercer Footer*/
+/*Fin del Footer*/
+
+
+
+/*Responsive De la Pagina*/
+
+@media only screen and (max-width: 1000px){
+	div.sector1 h5{
+		width: 200px;
+	}	
+}
+@media only screen and (max-width: 855px){
+	div.partidos{
+		width: 70%;
+		margin: 10px auto;
+	}
+}
+@media only screen and (max-width: 729px){
+	header h1{
+		width: 100%;
+		text-align: center;
+		padding: 0px;
+		position: relative;
+		left: 0px;
+	}
+	header{
+		display: block;
+	}
+	header nav ul{
+		justify-content: space-around;
+	}
+	header nav ul li{
+		display: table;
+	}
+	nav ul a{
+		border-left: none;
+	}
+}
+@media only screen and (max-width: 678px){
+	div.sector1{
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+	div.sector1 h5{
+		width: 200px;
+		margin: auto;
+	}
+	div.boton-final{
+		left: 20px;
+	}
+	div.partidos{
+		width: 90%;
+		margin: 10px auto;
+	}
+}
+
+@media only screen and (max-width: 408px){
+	div.primer-footer div.redes p{
+		margin-right: 0px;
+	}
+}
